@@ -6,8 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nikita</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
-
 
     <style>
 
@@ -15,161 +16,166 @@
 </head>
 
 <body>
-    <nav id="navbar">
+    <nav id="navbar" style="padding-top: 1rem;">
 
         <ul>
-            <li class="item"><a href="#">HOME</a> </li>
-            <li class="item"><a href="#">ABOUT</a> </li>
-            <li class="item"><a href="#">CONTACT </a> </li>
-
-
+            <li class="item"><a href="#home-section">HOME</a> </li>
+            <li class="item"><a href="#about-section">ABOUT</a> </li>
+            <li class="item"><a href="#contact-section">CONTACT </a> </li>
         </ul>
     </nav>
-      
+
     <div class="main">
-        <section class="home">
-             <div class="home-section align-items-center"> 
+        <section class="home" id="home-section">
+            <div class="home-section align-items-center">
                 <div class="container">
-                    < <div class="row align-items-center"> 
+                    <div class="row align-items-center" style="flex-wrap: nowrap;">
                         <div class="text">
                             <p class="intro">Hello I'm</p>
-                                <h1 class="name">NIKITA</h1>
-                                <h2 class="job">Frontend Web Developer</h2>
-                                <a href="#" class="btn">About me</a>
-                                <a href="#" class="btn">Contact</a>
+                            <h1 class="name">NIKITA</h1>
+                            <h2 class="job">Frontend Web Developer</h2>
+                            <a href="#about-section" class="btn">About me</a>
+                            <a href="#contact-section" class="btn">Contact</a>
                         </div>
                         <div class="home-img">
-                            
-                                <img src="art.JPG" alt="default">
-                           
-                            
-            
-                        </div>
-                    
-            </div>
-            
-            </div>
-
-     
-    </section>
-    <section class="about-section">
-        <div class="section-title">
-            <h2>About me</h2>
-        </div>
-        <div class="container">
-
-
-            <div class="about-img">
-                <div class="img-box">
-                    <img src="art.jpg" alt="image-loading" width="380px" height="380px">
-                </div>
-            </div>
-
-            <div class="about-text">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quibusdam quas odit quia harum
-                voluptates eius quo, voluptatum ea maiores, recusandae officia voluptas sequi quod distinctio quidem
-                reiciendis! Amet, dolorum.
-
-                <h3>skills</h3>
-                <div class="skills">
-                    <div class="skill-item">html</div>
-                    <div class="skill-item">css</div>
-                    <div class="skill-item">javascript</div>
-                    <div class="skill-item">django</div>
-                    <div class="skill-item">sql</div>
-                    <div class="skill-item">c++</div>
-                </div>
-                <div class="about-tabs">
-                    <button type="button" class="tab-item active" data-target="#education">education</button>
-                    <button type="button" class="tab-item" data-target="#experience">experience</button>
-                </div>
-
-                 <!-- education  -->
-                <div class="tab-content active" id="education">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <span class="date">200xx-20xx</span>
-                            <h4>bachelor of technology</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae officiis inventore
-                                voluptatibus sapiente distinctio quas, exercitationem c.</p>
-
-                        </div>
-                        <div class="timeline-item">
-                            <span class="date">200xx-20xx</span>
-                            <h4>bachelor of technology</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse repellendus illo, fugit
-                                tempora officiis .</p>
-
-                        </div>
-                        <div class="timeline-item">
-                            <span class="date">200xx-20xx</span>
-                            <h4>vbachelor of technology</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime eius, </p>
+                            <img src="art.JPG" alt="default">
 
                         </div>
                     </div>
+
                 </div>
 
-                <div class="tab-content" id="experience">
-                    <div class="timeline">
-                        <div class="timeline-item">
-                            <span class="date">200xx-20xx</span>
-                            <h4>bexperieney</h4>
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae officiis inventore
-                                voluptatibus sapiente distinctio quas, exercitationem c.</p>
+            </div>
 
-                        </div>
-                        <div class="timeline-item">
-                            <span class="date">200xx-20xx</span>
-                            <h4>experinece</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse repellendus illo, fugit
-                                tempora officiis .</p>
 
-                        </div>
-                        <div class="timeline-item">
-                            <span class="date">200xx-20xx</span>
-                            <h4>experience</h4>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime eius, </p>
+        </section>
 
-                        </div>
+        <section class="about-section" id="about-section">
+            <div class="section-title">
+                <h2>About me</h2>
+            </div>
+            <div class="container">
 
+
+                <div class="about-img">
+                    <div class="img-box">
+                        <img src="art.jpg" alt="image-loading" width="380px" height="380px" >
                     </div>
                 </div>
-                <a href="#" class="btn">download CV</a>
-                <a href="#" class="btn"> Contact Me</a>
 
-            </div>
-             
+                <div class="about-text">
+                    Aspiring Web Developer with a passion for crafting visually
+appealing and user-friendly websites and the ability to
+perform well in a team. Always keen to explore new
+technologies and create a positive impact on the digital
+landscape
+                    <h3>SKILLS</h3>
+                    <div class="skills">
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">PYTHON</div>
+                        <div class="skill-item">DJANGO FRAMEWORK</div>
+                        <div class="skill-item">MY SQL</div>
+                        <div class="skill-item">HTML</div>
+                        <div class="skill-item">CSS</div>
+                        <div class="skill-item">JAVASCRIPT</div>
+                        
 
-    </section>
-    
-    <section class="contact-section sec-padding">
-        <div class="section-title">
-            <h2>contact me</h2> 
-     </div>
-        <div class="container">
-            
-            <div class="row">
-                
-            </div>
-            <div class="row">
-                <div class="contact-form">
-                    <form >
-                        <div class="row">
-                            <div class="input-group"><input type="text" placeholder="Name" class="input-control" required></div>
-                            <div class="input-group"><input type="text" placeholder="Email" class="input-control" required></div>
-                            <div class="input-group"><input type="text" placeholder="subject" class="input-control" required></div>
-                            <div class="input-group">
-                                <textarea placeholder="message" class="input-control" required></textarea>
-                            </div>
-                            <button type="submit" class="btn">Send Message</button>
+                    </div>
+                    <div class="about-tabs">
+                        <button type="button" class="tab-item active" data-target="#education">Education</button>
+                        <button type="button" class="tab-item" data-target="#experience">Projects</button>
+                    </div>
 
-                            
-                            
-                       
+                    <!-- education  -->
+                    <div class="tab-content active" id="education">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">2021-2024</span>
+                                <h4>Bachelor of Computer Application</h4>
+                                <p>Banarsidas Chandiwala Institute of Information Technology</p>
                                 
+
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2020</span>
+                                <h4>CLASS XII(CBSE)</h4>
+                                <p>Shanti Gyan Niktan School</p>
+
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">2018</span>
+                                <h4>CLASS X(CBSE)</h4>
+                                <p>Shanti Gyan Niktan School </p>
+
                             </div>
                         </div>
+                    </div>
+
+                    <div class="tab-content" id="experience">
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <span class="date">20xx</span>
+                                <h4>News Portal</h4>
+                                <p>It a portal that displays Information about the events,staff members and student of BCIIT.
+                                    Built using DJANGO Framework.
+                                </p>
+
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">20xx</span>
+                                <h4>Image-Slider</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse repellendus illo,
+                                    fugit
+                                    tempora officiis .</p>
+
+                            </div>
+                            <div class="timeline-item">
+                                <span class="date">200xx</span>
+                                <h4>To-Do List</h4>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni maxime eius, </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <a href="#" class="btn">Download CV</a>
+                    <a href="#contact-section" class="btn">Contact Me</a>
+
+                </div>
+
+
+        </section>
+
+        <section class="contact-section sec-padding" id="contact-section">
+            <div class="section-title">
+                <h2>contact me</h2>
+            </div>
+            <div class="container" style="padding: 1em .5em 1em;">
+
+                <div class="row-contact">
+
+                </div>
+                <div class="row-contact">
+                    <div class="contact-form">
+                        <form>
+                            <div class="row">
+                                <div class="input-group"><input type="text" placeholder="Name" class="input-control"
+                                        required></div>
+                                <div class="input-group"><input type="text" placeholder="Email" class="input-control"
+                                        required></div>
+                                <div class="input-group"><input type="text" placeholder="subject" class="input-control"
+                                        required></div>
+                                <div class="input-group">
+                                    <textarea placeholder="message" class="input-control" required></textarea>
+                                </div>
+                                <button type="submit" class="btn">Send Message</button>
+
+
+
+
+
+                            </div>
+                    </div>
                     </form>
                 </div>
                 <div class="contact-info">
@@ -184,16 +190,16 @@
                     <div class="contact-info-item">
                         <h3>follow me</h3>
                         <div class="social-links">
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank" class="fa fa-facebook"></a>
+                            <a href="#" target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="#" target="_blank"><i class="fa fa-github"></i></a>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 

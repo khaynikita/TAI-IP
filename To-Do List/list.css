@@ -105,8 +105,8 @@ ul li.checked{
     color:green;
     text-decoration: line-through;
 }
-ul li.checked{
-    background-image: url();
+ul li.checked::before{
+    background-image: url(check.jpg);
    
 }
 ul li span{
