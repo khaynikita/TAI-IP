@@ -8,11 +8,8 @@
     /* colour names */
     --blue:#0000ff;
     --blue-dark:#18293c;
-    --orange:#ffa500;
-    --green-yelllow:#cddc39;
     --pink-light:#efa2b4;
     --cyan-light:#aef1ee;
-    --white:#ffffff;
     --white-alpha-40:rgba(255,255,255,0.40);
     --white-alpha-25:rgba(255,255,255,0.25);
     --backdrop-filter-blur:blur(5px);
@@ -81,19 +78,9 @@ body{
     line-height: 1.5;
     overflow-x:hidden;
     -webkit-tap-highlight-color:transparent;
-    /* padding:5vh 15px; */
+    
 }
-/* body::before{
-    content:'';
-    position:fixed;
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    background-color: var(--green-yelllow);
-    z-index:-1;
-    opacity:0.12;
-} */
+
 *{
     text-decoration: none;
 }
@@ -105,7 +92,22 @@ h3,h4,h5,h6{
 
     font-weight: 500;
 }
+@keyframes typing {
+    from {
+        width: 0; 
+    }
+    to {
+        width: 50%; /
+    }
+}
 
+
+.name {
+    overflow: hidden; 
+    border-right: 2px ; 
+    white-space: nowrap;  
+    animation: typing 3s steps(30, end) infinite; 
+}
 .img{
     max-width: 100%;
     vertical-align: middle;
@@ -177,6 +179,7 @@ button{
     user-select: none;
 
 }
+
 .btn{
     line-height: 1.5;
     background-color:var(--white-alpha-25) ;
@@ -208,10 +211,7 @@ button{
     z-index: -1;
     transition:width 0.3s ease;
 }
-/* .btn::before +.btn:hover{
-    width:100%;
-} */
-/*custom scrollbar*/
+
 ::-webkit-scrollbar{
     width:5px;
 
@@ -240,26 +240,7 @@ button{
 .home-img img:hover{
    filter: drop-shadow( 0 0 100px var(--blue-dark));
 }
-/* .img-box{
-    margin: auto;
-    width: 80%;
-}
-.home-img .img-box{
-    max-width: 160px;
-    background-color: var(--white-alpha-25);
-    border-radius: 50%;
-    border:8px solid var(--white-alpha-25);
-}
-.home-img .img-box img{
 
-    height: 90%;
-    width:100%;
-    border-radius: 50%;
-    margin:auto;
-
-} */
-
-/*section title*/
 .about{
     padding:80px 0;
 }
@@ -280,10 +261,6 @@ button{
 
 }
 
-/* 
-text{
-    align-items: center;
-} */
 
 #mainNavbar{
     background: rgb(222,192,222);
@@ -322,8 +299,10 @@ text{
 }
 .about-img .img-box img{
     width: 100%;
+    border-radius: 50%;
 
 }
+
 .about-text h3{
     text-transform: capitalize;
     font-size: 20px;
@@ -344,6 +323,8 @@ text{
     margin:0 10px 10px 0;
     border-radius: 20px;
 }
+
+
 .about-tabs .tab-item
 {
     padding:2px 0;
